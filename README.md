@@ -1,3 +1,3 @@
 # Práctica Sonar
 
-Código para prácticar errores de Sonar
+Código en Java para prácticar errores de Sonar
