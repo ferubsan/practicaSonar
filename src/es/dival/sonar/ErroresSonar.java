@@ -53,15 +53,15 @@ public class ErroresSonar {
 	public static String ultimoLista(List<String> lista) {
 		String ultimo="";
 		if (lista!=null && !lista.isEmpty())
-			ultimo = lista.get(lista.size()-1).toString();
+			ultimo = lista.get(lista.size()-1);
 		return ultimo;
 	}
 	
-	//método repetido
+	//metodo repetido
 	public static String ultimo(List<String> lista) {
 		String ultimo="";
 		if (lista!=null && !lista.isEmpty())
-			ultimo = lista.get(lista.size()-1).toString();
+			ultimo = lista.get(lista.size()-1);
 		return ultimo;
 	}
 
@@ -83,7 +83,7 @@ public class ErroresSonar {
 
 		boolean ejecuta = false;
 		if (lista!=null && ejecuta) {
-			//Este código nunca se ejecuta
+			//Este codigo nunca se ejecuta
 			if (!lista.isEmpty()) {
 				for (int i=0; i<lista.size(); i++) {
 					if (busqueda.equals(lista.get(i))) {
@@ -103,7 +103,7 @@ public class ErroresSonar {
 		if (lista!=null && ejecuta) {
 			//Este código nunca se ejecuta
 			if (!lista.isEmpty()) {
-				for (int i=0; i<lista.size(); i--) {
+				for (int i=0; i<lista.size(); i++) {
 					total++;
 				}
 			}
@@ -122,15 +122,15 @@ public class ErroresSonar {
 			for (int i=0; i<=lista.size(); i++)
 				System.out.println(lista.get(i));
 		}catch(Exception e) {
-			//Habrá que hacer algo no??
-			//TODO: Esto lo hago mañana...
+			//Habra que hacer algo no??
+			//TODO: Esto lo hago tomorrow...
 		}
 		
 	}
 
 	/*
 	 * 
-	 * Método comentado
+	 * Metodo comentado
 	 * 
 	 * public static void complejidad(int i) {
 		if ( i <= 5 ) {
@@ -142,7 +142,7 @@ public class ErroresSonar {
 	            }
 	         } else {   
 	            if ( i > 3 ) {
-	            	System.out.println("Vaya es mayor que 3 lo enviamos a otra función");  
+	            	System.out.println("Vaya es mayor que 3 lo enviamos a otra funcion");  
 	            } else {
 	               System.out.println("No hacemos nada....");
 	            }
@@ -150,9 +150,9 @@ public class ErroresSonar {
 	      } else {
 	         if ( i <= 7 ) {
 	            if ( i == 6 ) {
-	            	System.out.println("mmm no sé que hacer con el 6");
+	            	System.out.println("mmm no se que hacer con el 6");
 	            } else if ( i == 7 ) {
-	            	System.out.println("autodestrucción...");
+	            	System.out.println("autodestruccion...");
 	            } else {
 	               // Never reached
 	               System.out.println("Aquí no llega nunca");
